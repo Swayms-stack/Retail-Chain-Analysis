@@ -35,9 +35,8 @@ A full retail analytics project focused on sales forecasting, regional trends, a
 [[Open In Google Colab](https://colab.research.google.com/drive/1HNeipCXFOV6OaLeO5Z4xd4KLEWg9W5DY?usp=sharing)]
 
 
-### 📊 Dashboard Development
+### 📊 Python-Based Analytical Pipeline
 
-** Python-Based Analytical Pipeline**
 * Built a forecasting-driven inventory optimization model using Python, combining time series predictions with business metrics.
 
 * Prophet Forecasting: Used Facebook Prophet to forecast inventory demand at a quarterly level for all regions.
