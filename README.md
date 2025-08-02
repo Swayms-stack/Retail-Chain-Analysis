@@ -33,6 +33,13 @@ New Zealand retailers often hold surplus inventory, tying up significant working
 * Forecasts were generated at a regional and industry level (Retail & Accommodation sectors).
 * Integrated outputs with historical retail sales, inventory levels, cost data, and capacity constraints.
 
+* ## Retail Chain Analysis
+
+A full retail analytics project focused on sales forecasting, regional trends, and supply chain optimization using Python and real New Zealand retail data.
+
+[[Open In Google Colab](https://colab.research.google.com/drive/1HNeipCXFOV6OaLeO5Z4xd4KLEWg9W5DY?usp=sharing)]
+
+
 ### 📊 Dashboard Development
 
 * Created a **rich, multi-page Power BI dashboard** with the following features:
