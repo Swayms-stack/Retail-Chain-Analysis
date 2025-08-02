@@ -16,11 +16,6 @@ New Zealand retailers often hold surplus inventory, tying up significant working
 
 * Forecast future sales using historical data.
 * Identify gaps between **forecasted demand** and **actual inventory**.
-* Build an **interactive Power BI dashboard** to:
-
-  * Visualize forecast vs actual performance.
-  * Reveal excess or insufficient inventory across time periods.
-  * Simulate inventory and cost-saving scenarios.
 * Provide actionable insights for supply chain and finance teams.
 
 ---
@@ -42,13 +37,20 @@ A full retail analytics project focused on sales forecasting, regional trends, a
 
 ### 📊 Dashboard Development
 
-* Created a **rich, multi-page Power BI dashboard** with the following features:
+** Python-Based Analytical Pipeline**
+* Built a forecasting-driven inventory optimization model using Python, combining time series predictions with business metrics.
 
-  * **Forecast vs Actual Sales Comparison** by region, industry, and quarter.
-  * **Inventory Efficiency Metrics**: Days of Inventory on Hand, Holding Costs, Over/Under Stock ratios.
-  * **DAX-driven KPIs** highlighting financial impact and performance gaps.
-  * **Scenario Analysis**: What-if simulations to model savings under optimized inventory levels.
-  * **Decomposition Trees** and **Drill-through Pages** for deeper diagnostic insights.
+* Prophet Forecasting: Used Facebook Prophet to forecast inventory demand at a quarterly level for all regions.
+
+* Forecast Accuracy Metrics: Computed MAE, RMSE, and MAPE to evaluate model performance.
+
+* Sales-Proportional Inventory Allocation: Allocated forecasted inventory by region based on regional sales share.
+
+* Inventory Efficiency Metrics: Calculated Excess Inventory, Holding Costs, and Forecast Error at region level.
+
+* Top 10 Region Matrix: Created a clean KPI matrix highlighting regions with highest excess stock.
+
+* Visualizations with Plotly: Generated interactive heatmaps, bar charts, and KPI tables to visualize inventory inefficiencies.
 
 ---
 
@@ -58,19 +60,21 @@ A full retail analytics project focused on sales forecasting, regional trends, a
 | --------------------- | ------------------------------------- |
 | **Python (Prophet)**  | Sales forecasting (Time Series)       |
 | **Pandas & NumPy**    | Data cleaning and transformation      |
-| **Power BI**          | Dashboard development & visualization |
-| **DAX**               | Calculated KPIs and scenario logic    |
 | **Stats NZ Datasets** | Official historical data sources      |
 
 ---
 
 ## 📈 Results & Impact
 
-* Developed a **professionally designed dashboard** that reveals:
+* Delivered a data-rich, decision-ready analytics solution that:
 
-  * Hidden inefficiencies in inventory holdings.
-  * Significant cost savings opportunities through optimized supply alignment.
-  * Enables **data-driven decisions** that improve **working capital management**, reduce waste, and enhance supply chain agility.
+* Uncovered critical inefficiencies in inventory allocation, highlighting regions and quarters with excess stock and missed demand signals.
+
+* Quantified cost-saving potential through measurable reductions in holding costs and excess inventory, enabling proactive budget realignment.
+
+* Empowered cross-functional teams with clear, visual diagnostics—supporting agile responses to forecast mismatches and regional disparities.
+
+* Strengthened data-driven strategic planning by linking supply chain decisions to working capital optimization, financial health, and operational resilience.
 
 ---
 
@@ -80,19 +84,38 @@ A full retail analytics project focused on sales forecasting, regional trends, a
 NZ-Retail-Inventory-Optimization/
 │
 ├── data/
-│   ├── AES_2023.csv
-│   ├── Retail_Trade_Sales_by_Region_2011Q2–2025Q1.csv
-│   └── Forecast_Model_Prophet_Output.csv
+│   ├── Annual_Enterprise_Survey_2023.csv
+│   ├── CPI.csv
+│   ├── Forecast.csv
+│   ├── Forecast_Model.csv
+│   ├── Inventory.csv
+│   ├── Regional_Sales.csv
+│   ├── Retail_Sales.csv
+│   ├── Retail_Trade_Sales_and_stocks_by_industry_1995–2025.csv
+│   ├── Wholesale.csv
+│   └── nz_retail_inventory_optimized.csv
 │
 ├── forecasting/
-│   └── prophet_model.ipynb
+│   └── supply_chain_forecasting.ipynb
 │
 ├── powerbi/
-│   └── NZ_Inventory_Optimization.pbix
+│   ├── NZ_Inventory_Optimization.pbix
+│   └── pbix_visual_map.md          
 │
 ├── visuals/
-│   └── dashboard_screenshots/
+│   ├── dashboard_screenshots/
+│   │   ├── regional_heatmap.png
+│   │   ├── top10_excess_bar.png
+│   │   └── executive_summary_table.png
+│   └── final_presentation_figures/
 │
-├── README.md
-└── requirements.txt
+├── documentation/
+│   ├── README.md
+│   ├── insights_summary.md
+│   └── markdown_tables.md          
+│
+├── reports/
+│   └── NZ_Retail_Case_Report.pdf
+│
+└── requirements.txt                
 ```
